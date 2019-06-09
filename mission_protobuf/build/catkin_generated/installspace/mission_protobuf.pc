@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: mission_protobuf
+Description: Description of mission_protobuf
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lmission_planner_proto
+Requires: roscpp

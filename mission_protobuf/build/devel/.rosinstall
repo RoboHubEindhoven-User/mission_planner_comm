@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zinki/workspace/catkin_ws/src/mission_planner_comm/mission_protobuf/build/devel/setup.sh

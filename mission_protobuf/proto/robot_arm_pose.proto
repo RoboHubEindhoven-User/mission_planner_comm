@@ -1,0 +1,29 @@
+// /***************************************************************************
+//  *  robot_arm_pose.proto - mission planner Protocol - robot arm pose message
+//  *
+//  *  Copyright  2019 Robohub-Eindhoven
+//  ****************************************************************************/
+
+package mission_protobuf;
+
+option java_package = "org.mission_planner.common_msgs";
+option java_outer_classname = "RobotArmProtos";
+
+message RobotArm {
+    message Pose {
+        required string name    = 1;
+        required double joint_1 = 2;
+        required double joint_2 = 3;
+        required double joint_3 = 4;
+        required double joint_4 = 5;
+        required double joint_5 = 6;
+        required double joint_6 = 7;
+    }
+
+    required Pose pose = 1;
+}
+
+message RobotArmConfiguration {
+    required int32 id           = 1;
+    repeated RobotArm arm_pose  = 2;
+}

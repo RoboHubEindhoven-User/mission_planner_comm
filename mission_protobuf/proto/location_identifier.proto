@@ -1,0 +1,27 @@
+// /***************************************************************************
+//  *  LocationIdentifier.proto - mission planner Protocol - Location Identifier message
+//  *
+//  *  Copyright  2019 Robohub-Eindhoven
+//  ****************************************************************************/
+
+// /*  
+//  */
+// package mission_protobuf;
+
+// message LocationIdentifier {
+//   enum LocationType {
+//     NONE  = -1;
+//     EN    = 0;   // Entrance
+//     SH    = 1;   // Shelf
+//     WS    = 2;   // Workstation
+//     CB    = 3;   // Conveyor belt
+//     WP    = 4;   // Way Point (additional navigation goal)
+//     PP    = 5;   // Precision Placement Location
+//     ROBOT = 6;   // On Robot
+//     EX    = 100; // Exit
+//   }
+
+//   required LocationType type        = 1;  // The type of location
+//   required int32        instance_id = 2;  // The instance ID of the location (e.g. if there are several shelves)
+//   optional string       description = 3;  // A human-readable description of the location
+// }

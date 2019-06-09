@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mission_planner_comm</name>
+  <version>0.0.0</version>
+  <description>The mission_planner_comm metapackage</description>
+
+  <maintainer email="thi.zinkeng@gmail.com">Thierry Zinkeng</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>mission_protobuf</exec_depend>
+  <exec_depend>mission_demo</exec_depend>
+
+  <export>
+    <metapackage />
+  </export>
+</package>

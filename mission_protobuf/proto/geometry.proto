@@ -1,0 +1,32 @@
+// /***************************************************************************
+//  *  geometry.proto - mission planner Protocol - geometry message
+//  *
+//  *  Copyright  2019 Robohub-Eindhoven
+//  ****************************************************************************/
+
+package mission_protobuf;
+
+option java_package = "org.mission_planner.common_msgs";
+option java_outer_classname = "GeometryProtos";
+
+message Geometry {
+  message Pose {
+    message Point {
+      required double x = 1;
+      required double y = 2;
+      required double z = 3;
+    }
+    
+    message Quaternion {
+      required double x = 1;
+      required double y = 2;
+      required double z = 3;
+      required double w = 4;
+    }
+      
+    required Point position           = 1;  
+    required Quaternion orientation   = 2;  
+  }
+    
+  required Pose pose = 1; 
+}

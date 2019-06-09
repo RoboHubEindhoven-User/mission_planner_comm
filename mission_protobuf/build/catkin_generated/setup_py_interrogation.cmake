@@ -1,0 +1,6 @@
+set(mission_protobuf_SETUP_PY_VERSION "0.0.0")
+set(mission_protobuf_SETUP_PY_SCRIPTS "")
+set(mission_protobuf_SETUP_PY_PACKAGES "mission_protobuf")
+set(mission_protobuf_SETUP_PY_PACKAGE_DIRS "src/mission_protobuf")
+set(mission_protobuf_SETUP_PY_MODULES "")
+set(mission_protobuf_SETUP_PY_MODULE_DIRS "")

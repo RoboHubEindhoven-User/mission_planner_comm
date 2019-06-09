@@ -1,0 +1,24 @@
+// /***************************************************************************
+//  *  time.proto - mission planner Protocol - time message
+//  *
+//  *  Copyright  2019 Robohub-Eindhoven
+//  ****************************************************************************/
+
+package mission_protobuf;
+
+option java_package = "org.mission_planner.common_msgs";
+option java_outer_classname = "TimeProtos";
+
+// Time stamp and duration structure.
+// Can be used for absolute times or
+// durations alike.
+message Time {
+
+  // Time in seconds since the Unix epoch
+  // in UTC or seconds part of duration
+  required int64  sec = 1;
+
+  // Nano seconds after seconds for a time
+  // or nanoseconds part for duration
+  required int64 nsec = 2;
+}

@@ -1,0 +1,8 @@
+prefix=/home/zinki/workspace/catkin_ws/src/mission_planner_comm/mission_protobuf/build/devel
+
+Name: mission_protobuf
+Description: Description of mission_protobuf
+Version: 0.0.0
+Cflags: -I/home/zinki/workspace/catkin_ws/src/mission_planner_comm/mission_protobuf/include
+Libs: -L/home/zinki/workspace/catkin_ws/src/mission_planner_comm/mission_protobuf/build/devel/lib -lmission_planner_proto
+Requires: roscpp
