@@ -19,9 +19,10 @@ class Waypoint(YAMLObject):
     yaml_loader = SafeLoader
     yaml_tag = u'!Waypoint'
 
-    def __init__(self, location = None, pose = None, service_area = None):
+    def __init__(self, location = None, pose = None, service_area = None, should_scan = None):
         self.location     = location
         self.pose         = pose
         self.service_area = service_area
+        self.should_scan  = should_scan
 
         

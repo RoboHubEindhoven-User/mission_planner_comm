@@ -21,9 +21,10 @@ struct Waypoint
     Location        location;
     geometry::Pose  pose;
     ServiceArea     service_area;
+    bool            should_scan;
 
-    Waypoint(Location location = {0,0,""}, geometry::Pose pose = {{0,0,0}, {0,0,0,0}}, ServiceArea service_area = {0,0,0,0,0,0})
-    :location(location), pose(pose), service_area(service_area){}
+    Waypoint(Location location = {0,0,""}, geometry::Pose pose = {{0,0,0}, {0,0,0,0}}, ServiceArea service_area = {0,0,0,0,0,0}, bool should_scan = false)
+    :location(location), pose(pose), service_area(service_area), should_scan(should_scan) {}
 
 };
 
