@@ -140,3 +140,9 @@ file(GLOB PROTO_MODEL_FILES
 ADD_LIBRARY(mission_protobuf ${PROTO_MODEL_FILES})
 # ${PROTOBUF_LIBRARIES} should be defined by FIND_PACKAGE(Protobuf REQUIRED)
 TARGET_LINK_LIBRARIES(mission_protobuf ${PROTOBUF_LIBRARIES})
+
+## Mark cpp header files for installation
+install(DIRECTORY include/${PROJECT_NAME}/
+   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+   FILES_MATCHING PATTERN "*.pb.h"
+   PATTERN ".svn" EXCLUDE)
