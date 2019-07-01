@@ -20,6 +20,7 @@ class Waypoint(YAMLObject):
     yaml_tag = u'!Waypoint'
 
     def __init__(self, location = None, pose = None, service_area = None, should_scan = None):
+        self.id           = 0
         self.location     = location
         self.pose         = pose
         self.service_area = service_area
