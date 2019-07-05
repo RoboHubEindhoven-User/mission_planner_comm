@@ -10,7 +10,8 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>mission_protobuf</exec_depend>
-  <exec_depend>mission_demo</exec_depend>
+  <exec_depend>mission_data_types</exec_depend>
+  <exec_depend>mission_ros_msgs</exec_depend>
 
   <export>
     <metapackage />
